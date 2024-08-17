@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aroma Bumi Cafe">
+    <meta name="keywords" content="Cafe, Coffe, Tea, Drink">
+    <meta name="author" content="M Haikal Fikri">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="stylesheet.css">
     <title>Aroma Bumi</title>
 </head>
@@ -11,106 +15,111 @@
 <body>
     <header>
         <div class="container">
-            <div class="header-left">
-                <img class="header-logo" src="assets/Logo White.png" alt="">
+            <div class="logo">
+                <img src="/assets/Logo White.png" alt="Aroma Bumi Logo">
             </div>
-            <div class="header-right">
-                <a href="/pages/menu.html">Products</a>
-                <a href="/pages/findus.html">Store</a>
-                <a href="/pages/help.html">Contact</a>
-            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="/pages/product.html">Products</a></li>
+                    <li><a href="/pages/store.html">Store</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <div class="top-wrapper">
-        <div class="topwrap-container">
-            <h1>Freshly Brewed</h1>
-            <h1>Coffe & Tea</h1>
-            <p>Best qualities from our local soil</p>
-        </div>
-    </div>
 
-    <div class="main-wrapper">
-        <div class="main-items">
-            <img class="main-photo" src="assets/Who are we.jpg" alt="">
-            <div class="main-text">
-                <h2 class="main-title">Who are we?</h2>
-                <p>
-                    We are jakarta-based coffe and tea house focused on professionally brewing local sourced, high
-                    quality, coffe beans and tea leaves.
-                </p>
-            </div>
+    <section class="hero">
+        <div class="container">
+            <h1>Freshly Brewed <br> Coffee & Tea</h1>
+            <h2>Best qualities from our local soil</h2>
         </div>
-        <div class="main-items">
-            <div class="main-text">
-                <h2 class="main-title">Product Showcase</h2>
-                <p>
-                    Our products contain the highest quality ingredients processed with care.
-                </p>
-            </div>
-            <img class="main-photo" src="assets/Our products.jpg" alt="">
-            <span class="btn see-products">See our coffee and tea</span>
-        </div>
-        <div class="main-items">
-            <img class="main-photo" src="assets/Hang out with us.jpg" alt="">
-            <div class="main-text">
-                <h2 class="main-title">Hang out with us!</h2>
-                <p>
-                    Our stores use sustainable furnitures, surrounded by nature, to help our planet survive.
-                </p>
-                <span class="btn find-us">Find our cafes</span>
-            </div>
-        </div>
-    </div>
+    </section>
 
-    <div class="findus-wrapper">
-        <h2>Find us out at Instagram <span>@aroma_bumi</span></h2>
-        <div class="findus-feeds">
-            <div class="feeds">
+    <main>
+        <section class="about">
+            <div class="about-content">
+                <img src="/assets/Who are we.jpg" alt="Who are we">
+                <div class="about-text">
+                    <h2>Who are we?</h2>
+                    <p>We are Jakarta-based coffee and tea house focused on professionally brewing local sourced,
+                        high
+                        quality,
+                        coffee beans and tea leaves.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-showcase">
+            <div class="product-content">
+                <div class="product-text">
+                    <h2>Product Showcase</h2>
+                    <p>Our products contain the highest quality ingredients processed with care.</p>
+                    <a href="/assets/Our products.jpg" class="cta-button">See our coffee and tea</a>
+                </div>
+                <img src="assets/Our products.jpg" alt="Product Showcase">
+            </div>
+        </section>
+
+        <section class="hangout">
+            <div class="hangout-content">
+                <img src="/assets/Hang out with us.jpg" alt="Hang out with us">
+                <div class="hangout-text">
+                    <h2>Hang out with us!</h2>
+                    <p>Our stores use sustainable furnitures, surrounded by nature, to help our planet survive.</p>
+                    <a href="#" class="cta-button">Find our cafes</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="instagram">
+            <h2>Find us out at Instagram <span>@aroma_bumi</span>!</h2>
+            <div class="instagram-gallery">
+                <!-- <div class="galleries"> -->
                 <img class="feed" src="assets/Feed 1.png" alt="">
                 <img class="feed" src="assets/Feed 2.png" alt="">
                 <img class="feed" src="assets/Feed 3.png" alt="">
-            </div>
-            <div class="feeds">
+                <!-- </div>
+                <div class="galleries"> -->
                 <img class="feed" src="assets/Feed 4.png" alt="">
                 <img class="feed" src="assets/Feed 5.png" alt="">
                 <img class="feed" src="assets/Feed 6.png" alt="">
+                <!-- </div> -->
             </div>
-        </div>
-    </div>
+        </section>
 
-    <div class="ask-wrapper">
-        <h2>Ask us more!</h2>
-        <p>If you have any questions or interested to cooperate with us, kindly let us know here:</p>
-        <span class="btn contact-us">Contact us</span>
-    </div>
+        <section class="contact">
+            <h2>Ask us more!</h2>
+            <p>If you have any questions or interested to cooperate with us, kindly let us know here:</p>
+            <a href="#" class="cta-button">Contact us</a>
+        </section>
+
+    </main>
 
     <footer>
-        <div class="footer-list">
-            <img class="footer-logo" src="assets/Logo White.png" alt="">
-            <div class="contact-items">
-                <img class="contact-icon" src="assets/MAIL ICON.svg" alt="">
-                <img class="contact-icon" src="assets/PHONE ICON.svg" alt="">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="/assets/Logo White.png" alt="Aroma Bumi Logo">
             </div>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li class="footer-title">Products</li>
-                <li>Coffe Based</li>
-                <li>Non-Coffee</li>
-                <li>Tea Based</li>
-            </ul>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li class="footer-title">Store</li>
-                <li>Location</li>
-            </ul>
-        </div>
-        <div class="footer-list">
-            <ul>
-                <li class="footer-title">Contact</li>
-                <li>Customer Service</li>
-            </ul>
+            <div class="footer-nav">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="#">Coffee Based</a></li>
+                    <li><a href="#">Non-Coffee</a></li>
+                    <li><a href="#">Tea Based</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h3>Store</h3>
+                <ul>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>

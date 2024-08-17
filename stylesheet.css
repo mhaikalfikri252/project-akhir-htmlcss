@@ -1,164 +1,244 @@
+/* General Styles */
 body {
-  margin: 0;
   font-family: sans-serif;
 }
 
 .container {
-  width: 1170px;
-  padding: 0 15px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
-/* HEADER HOME MENU PAGE*/
+main {
+  text-align: center;
+}
 
+:root {
+  --primaryColor: #143642;
+  --secondaryColor: #0f8b8d;
+  --tertiaryColor: #ec9a29;
+  --buttonColor: #a8201a;
+}
+
+/* Header */
 header {
-  height: 65px;
+  color: #fff;
+  padding: 20px 0;
   width: 100%;
+  text-align: center;
   background-color: transparent;
   position: fixed;
   top: 0;
   z-index: 10;
 }
 
-.header-left {
+header .logo {
+  display: flex;
   float: left;
 }
 
-.header-right {
-  float: right;
-}
-
-.header-logo {
-  height: 50px;
-  margin-top: 20px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  /* display: block; */
-  /* float: left; */
-  /* transition: all 0.5s; */
-  text-decoration: none;
-  font-size: larger;
-}
-
-/* TOP WRAPPER HOME PAGE */
-
-.top-wrapper {
-  padding: 100px 0 180px 0;
-  background-image: url("assets/Coffe\ Header.png");
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-/* .top-wrapper::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: max-content;
-  height: max-content;
-  background: rgba(1, 72, 1, 0.5);
-  pointer-events: none; 
-} */
-
-.top-wrapper h1 {
-  font-size: 45px;
-  margin-bottom: 0px;
-  line-height: 30px;
-}
-
-.top-wrapper p {
-  font-size: 24px;
-}
-
-.topwrap-container {
-  width: 1170px;
-  padding: 150px 15px 0 15px;
-  margin: 0 auto;
-}
-
-/* MAIN WRAPPER HOME PAGE */
-
-.main-wrapper {
-  /* height: 1000px; */
-  padding: 80px 80px;
-  text-align: center;
-}
-
-.main-items {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* align-items: center; */
-  padding-top: 80px;
-}
-
-.main-photo {
-  width: 100px;
-  height: 100px;
-}
-
-.main-text {
-  width: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-/* FIND US HOME PAGE */
-
-.findus-wrapper {
-  text-align: center;
-}
-
-.feed {
-  width: 15%;
-  height: 15%;
-}
-
-/* ASK WRAPPER HOME PAGE */
-
-.ask-wrapper {
-  text-align: center;
-  padding: 100px 80px;
-}
-
-/* FOOTER HOME PAGE */
-
-footer {
-  background-color: #143642;
-  color: #fff;
-  height: 120px;
-  padding: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.footer-logo {
+header .logo img {
   height: 50px;
 }
 
-.footer-list {
-  padding: 0px 30px;
-}
-
-li {
+header nav ul {
+  display: flex;
+  /* justify-content: center; */
   list-style: none;
 }
 
-.footer-title {
-  color: #ec9a29;
+header .nav {
+  float: right;
 }
 
-.footer-list li {
-  padding-bottom: 20px;
+header nav ul li {
+  margin: 0 15px;
 }
 
-.contact-icon {
-  fill: white;
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: url("/assets/Coffe\ Header.png") no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+  height: 250px;
+}
+
+.hero h1 {
+  font-size: 44px;
+  font-weight: bold;
+  /* margin-bottom: 10px; */
+  margin-top: 80px;
+}
+
+.hero h2 {
+  font-size: larger;
+}
+
+/* About Section */
+.about,
+.product-showcase,
+.hangout {
+  display: flex;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.about img,
+.product-showcase img,
+.hangout img {
+  width: 100%;
+  max-width: 500px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.about div,
+.product-showcase div,
+.hangout div {
+  flex: 1;
+}
+
+.about h2,
+.product-showcase h2,
+.hangout h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.about p,
+.product-showcase p,
+.hangout p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #b04931;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Instagram Section */
+.instagram {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.instagram h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.instagram .instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.instagram img {
+  width: 15%;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background: var(--primaryColor);
+  padding: 20px 0;
+  flex-direction: row;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer .footer-logo img {
+  height: 50px;
+}
+
+footer .footer-nav {
+  margin-bottom: 20px;
+}
+
+footer .footer-nav h3 {
+  margin-bottom: 10px;
+  color: var(--tertiaryColor);
+}
+
+footer .footer-nav ul {
+  list-style: none;
+}
+
+footer .footer-nav ul li {
+  margin-bottom: 10px;
+}
+
+footer .footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about,
+  .product-showcase,
+  .hangout {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about img,
+  .product-showcase img,
+  .hangout img {
+    margin-bottom: 20px;
+  }
+
+  .instagram .instagram-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .instagram .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
 }
