@@ -11,6 +11,7 @@ body {
 
 main {
   text-align: center;
+  padding: 50px 300px;
 }
 
 :root {
@@ -60,6 +61,13 @@ header nav ul li a {
   text-decoration: none;
 }
 
+.border {
+  border-bottom: 4px solid var(--tertiaryColor);
+  width: 240px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
 /* Hero Section */
 .hero {
   background: url("/assets/Coffe\ Header.png") no-repeat center center/cover;
@@ -94,9 +102,7 @@ header nav ul li a {
 .about img,
 .product-showcase img,
 .hangout img {
-  width: 50%;
-  max-width: 300px;
-  margin-right: 20px;
+  width: 20%;
   border-radius: 10px;
 }
 
@@ -109,9 +115,10 @@ header nav ul li a {
 .about h2,
 .product-showcase h2,
 .hangout h2 {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 15px;
   color: var(--secondaryColor);
+  font-weight: bold;
 }
 
 .about p,
@@ -130,6 +137,31 @@ header nav ul li a {
   border-radius: 5px;
 }
 
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-content p {
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Product Section */
+.product-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Hangout Content */
+.hangout-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 /* Instagram Section */
 .instagram {
   text-align: center;
@@ -137,24 +169,33 @@ header nav ul li a {
 }
 
 .instagram h2 {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   color: var(--secondaryColor);
+  font-weight: bold;
 }
 
 .instagram span {
   color: var(--tertiaryColor);
 }
 
-.instagram .instagram-grid {
+/* .instagram .instagram-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-}
+} */
 
 .instagram img {
-  width: 15%;
+  width: 20%;
   border-radius: 10px;
+}
+
+.galleries {
+  margin-bottom: 20px;
+}
+
+.feed {
+  margin-right: 20px;
 }
 
 /* Contact Section */
@@ -164,9 +205,10 @@ header nav ul li a {
 }
 
 .contact h2 {
-  font-size: 2em;
+  font-size: 1.8rem;
   margin-bottom: 10px;
   color: var(--secondaryColor);
+  font-weight: bold;
 }
 
 .contact p {
