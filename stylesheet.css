@@ -67,6 +67,8 @@ header nav ul li a {
   padding: 100px 0;
   text-align: center;
   height: 250px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .hero h1 {
@@ -92,8 +94,8 @@ header nav ul li a {
 .about img,
 .product-showcase img,
 .hangout img {
-  width: 100%;
-  max-width: 500px;
+  width: 50%;
+  max-width: 300px;
   margin-right: 20px;
   border-radius: 10px;
 }
@@ -109,6 +111,7 @@ header nav ul li a {
 .hangout h2 {
   font-size: 2em;
   margin-bottom: 15px;
+  color: var(--secondaryColor);
 }
 
 .about p,
@@ -118,7 +121,7 @@ header nav ul li a {
   margin-bottom: 15px;
 }
 
-.btn {
+.cta-button {
   display: inline-block;
   padding: 10px 20px;
   background: #b04931;
@@ -136,6 +139,11 @@ header nav ul li a {
 .instagram h2 {
   font-size: 2em;
   margin-bottom: 20px;
+  color: var(--secondaryColor);
+}
+
+.instagram span {
+  color: var(--tertiaryColor);
 }
 
 .instagram .instagram-grid {
@@ -158,6 +166,7 @@ header nav ul li a {
 .contact h2 {
   font-size: 2em;
   margin-bottom: 10px;
+  color: var(--secondaryColor);
 }
 
 .contact p {
@@ -207,6 +216,12 @@ footer .footer-nav ul li {
 footer .footer-nav ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+footer .footer-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Responsive Design */
