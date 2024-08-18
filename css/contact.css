@@ -50,8 +50,9 @@ main {
 }
 
 .contact-form h2 {
-  color: #366e68;
-  font-size: 2em;
+  color: var(--secondaryColor);
+  font-size: 1.5rem;
+  font-weight: bold;
   margin-bottom: 20px;
 }
 
@@ -82,20 +83,15 @@ main {
 }
 
 .contact-form button {
-  width: 25%;
-  padding: 10px;
-  background-color: #b23b2a;
+  padding: 10px 30px;
+  background-color: var(--buttonColor);
   color: #ffffff;
   border: none;
   border-radius: 25px;
-  font-size: 1.2em;
+  font-size: 1rem;
   cursor: pointer;
   justify-content: center;
-  margin: auto;
-}
-
-.contact-form button:hover {
-  background-color: #a83228;
+  margin-top: 15px;
 }
 
 /* Footer */
@@ -103,6 +99,8 @@ footer {
   background: var(--primaryColor);
   padding: 20px 0;
   flex-direction: row;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 footer .container {
