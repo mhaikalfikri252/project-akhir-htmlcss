@@ -82,8 +82,7 @@ main {
   padding: 20px 0px 0px 0px;
   border-radius: 8px;
   text-align: center;
-  background: url("../assets/coffeebackground.png") no-repeat center
-    center/cover;
+  background: url(../assets/coffeebackground.png) no-repeat center center/cover;
 }
 
 .product img {
